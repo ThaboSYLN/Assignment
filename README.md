@@ -1,40 +1,39 @@
-Coin Sorting Puzzle Solver
+# Coin Sorting Solver
 
-Overview
+This project implements various search algorithms to solve the Coin Sorting Puzzle. The goal is to move coins across different positions while following specific rules.
 
-This Python program solves a coin sorting puzzle using various search algorithms. The goal is to move coins between positions while following specific rules until all coins are correctly placed.
+## Features
+- Implements **Depth-First Search (DFS), Breadth-First Search (BFS), Greedy Best-First Search, and A* Search**.
+- Enforces movement constraints based on coin parity (odd/even).
+- Provides a step-by-step solution for sorting coins efficiently.
 
-Features
+## Requirements
+- Python 3.x
 
-Supports different numbers of coins (4, 6, 8, or 10).
+## Usage
+1. Run the script:
+   ```sh
+   python coin_sorting_solver.py
+   ```
+2. Enter the number of coins (4, 6, 8, or 10).
+3. Choose a search algorithm to solve the puzzle.
+4. View the step-by-step moves to solve the problem.
 
-Implements multiple search algorithms:
+## Example Output
+```
+Enter number of coins: 4
+Choose an algorithm:
+1. Depth-first search
+2. Breadth-first search
+3. Greedy best-first search
+4. A* search
 
-Depth-First Search (DFS)
+Solving with A* search...
+Solution found in X moves:
+Move 1: A -> B
+Move 2: E -> C
+...
+```
 
-Breadth-First Search (BFS)
-
-Greedy Best-First Search
-
-A* Search
-
-Usage
-
-Run the script:
-
-python script.py
-
-Enter the number of coins (4, 6, 8, or 10).
-
-Choose a search algorithm by entering the corresponding number.
-
-The program will attempt to solve the puzzle and display the steps taken.
-
-Requirements
-
-Python 3.x
-
-License
-
-This project is open-source and available under the MIT License.
-
+## License
+MIT License
